@@ -31,6 +31,24 @@ export default function Home() {
       <footer className={styles.footer}>
         Made with <span className={styles.heart}>♥</span> in PEI
       </footer>
+
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=G-EERY46WDLC`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EERY46WDLC', {
+              page_path: window.location.pathname,
+            });
+            window.gaSiteId = 'G-EERY46WDLC';
+          `,
+        }} />
     </div>
   )
 }
