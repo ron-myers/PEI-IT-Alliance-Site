@@ -15,7 +15,15 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <code className={styles.code}>Coming soon...</code>
+          <code className={styles.code}>The voice of the IT and Remote Worker industries of PEI.</code>
+        </p>
+
+        <p className={styles.joinInfo}>
+          <a href="https://forms.gle/r8CaZbG1XsKw7bai6" title="The force is strong with this one.  We have hope rebellions are built on hope">Join The Alliance</a>
+        </p>
+
+        <p className={styles.contactInfo}>
+          <a href="mailto:ron.myers@hey.com">Contact us</a>
         </p>
 
       </main>
